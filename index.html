@@ -52,9 +52,9 @@ nav{
   width:32px;height:32px;border-radius:50%;background:var(--bg3);
   border:none;cursor:pointer;font-size:14px;display:flex;align-items:center;
   justify-content:center;transition:all var(--tr);color:var(--text);
+  text-decoration:none;
 }
 .nav-print:hover{background:var(--accent);transform:scale(1.08)}
-.print-contact{display:none}
 .nav-cta{
   font-size:13px;font-weight:600;padding:7px 16px;border-radius:100px;
   background:var(--text);color:var(--bg);border:none;cursor:pointer;
@@ -237,74 +237,6 @@ footer{
   .stats-bar{grid-template-columns:1fr}
   .contact-row{padding:14px 18px}
 }
-
-/* ── PRINT / A4 CV ── */
-@media print{
-  @page{size:A4;margin:12mm 14mm}
-  :root,[data-theme=dark]{
-    --bg:#fff;--bg2:#fff;--bg3:#f5f5f7;
-    --text:#1d1d1f;--text2:#3a3a3c;--text3:#6e6e73;
-    --accent:#C9A84C;--card:#fff;--cb:#e8e8ed;
-    --sh:none;--shl:none;
-  }
-  *,*::before,*::after{
-    animation:none !important;transition:none !important;
-    opacity:1 !important;transform:none !important;
-    box-shadow:none !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important;
-  }
-  html,body{background:#fff !important;color:#1d1d1f !important;font-size:10.5pt;line-height:1.4}
-  nav,.hero-scroll,.hero-buttons,footer,.theme-btn,.nav-print,.nav-cta,.nav-mobile-menu,
-  .live-badge,.c-arrow,.app-hero,.c-ico,.contact-section{display:none !important}
-  a{color:inherit;text-decoration:none}
-
-  .hero{min-height:0;padding:0 0 4mm;text-align:left;overflow:visible}
-  .hero-title{font-size:22pt;letter-spacing:-.5px;line-height:1.1;margin-bottom:4pt}
-  .hero-title br{display:none}
-  .hero-title span{color:#C9A84C}
-  .hero-eyebrow{font-size:9pt;margin-bottom:4pt;color:#C9A84C}
-  .hero-sub{font-size:10pt;max-width:none;margin-bottom:4pt;color:#3a3a3c}
-  .print-contact{display:block;font-size:9.5pt;color:#3a3a3c;margin-bottom:4mm;letter-spacing:.1px}
-
-  .stats-bar{padding:3mm 0;gap:6mm;border:none !important;background:transparent !important;
-    grid-template-columns:repeat(4,1fr);page-break-inside:avoid;break-inside:avoid}
-  .stat-num{font-size:14pt}
-  .stat-unit{font-size:10pt}
-  .stat-label{font-size:8pt;color:#3a3a3c}
-
-  section{padding:3mm 0 !important;page-break-inside:auto}
-  .section-label{font-size:8pt;margin-bottom:2pt;color:#C9A84C}
-  .section-title{font-size:14pt;letter-spacing:-.5px;margin-bottom:2pt;page-break-after:avoid;break-after:avoid}
-  .section-sub{font-size:9.5pt;margin-bottom:3mm;max-width:none;color:#3a3a3c}
-
-  .exp-grid{gap:3mm !important;grid-template-columns:1fr !important}
-  .exp-card,.app-card,.skill-card{
-    background:#fff !important;border:1px solid #e8e8ed !important;border-radius:6pt !important;
-    padding:3mm 4mm !important;page-break-inside:avoid;break-inside:avoid;
-  }
-  .exp-header{margin-bottom:2mm}
-  .exp-title{font-size:11pt}
-  .exp-company{font-size:9.5pt;margin-bottom:0;color:#C9A84C}
-  .exp-date{font-size:8.5pt;background:transparent !important;padding:0;color:#3a3a3c}
-  .exp-era{font-size:8pt;margin-top:2mm;color:#3a3a3c}
-  .bullets{gap:3pt}
-  .bullet{font-size:9.5pt;line-height:1.4;padding-left:10pt;color:#1d1d1f}
-  .bullet strong{color:#1d1d1f}
-  .bullet::before{top:6pt;width:3pt;height:3pt;background:#C9A84C}
-  .divider{margin:2mm 0;background:#e8e8ed}
-
-  .apps-grid{grid-template-columns:1fr !important;gap:3mm !important}
-  .app-body{padding:0 !important}
-  .app-name{font-size:11pt}
-  .app-sub{font-size:9pt;color:#3a3a3c;margin-bottom:2mm}
-  .app-tags{margin-bottom:2mm;gap:4pt}
-  .tag{font-size:8pt;padding:1pt 6pt;background:#f5f5f7 !important;color:#3a3a3c}
-  .app-bullets .bullet{font-size:9pt}
-
-  .skills-wrapper{grid-template-columns:1fr 1fr !important;gap:3mm !important}
-  .skill-icon{display:none}
-  .skill-name{font-size:9.5pt;margin-bottom:2pt}
-  .skill-items{font-size:9pt;line-height:1.5;color:#3a3a3c}
-}
 </style>
 </head>
 <body>
@@ -319,7 +251,7 @@ footer{
     <a href="#contact">Contact</a>
   </div>
   <div class="nav-right">
-    <button class="nav-print" onclick="window.print()" title="Print / Save as PDF" aria-label="Print CV">🖨️</button>
+    <a class="nav-print" href="hasan-sawaed-cv.pdf" target="_blank" rel="noopener" title="Open CV (PDF)" aria-label="Open CV PDF">🖨️</a>
     <button class="theme-btn" onclick="toggleTheme()">🌙</button>
     <a href="#contact" class="nav-cta">Get in touch</a>
   </div>
@@ -334,7 +266,6 @@ footer{
   <p class="hero-sub">
     ML-driven personalisation to millions of users. iOS payments replatform. Apps shipped from 0 to production — independently.
   </p>
-  <div class="print-contact">hasansa007@gmail.com · +972 54 254 5288 · linkedin.com/in/hasan-sawaed-8296b459</div>
   <div class="hero-buttons">
     <a href="#experience" class="btn-primary">View experience</a>
     <a href="#contact" class="btn-secondary">Get in touch</a>
