@@ -161,6 +161,12 @@ section{padding:clamp(60px,8vw,120px) clamp(20px,5vw,80px)}
 .app-hero.ir{background:linear-gradient(135deg,#0d2b1a 0%,#1e5c34 50%,#0d2b1a 100%)}
 .app-hero.so{background:linear-gradient(135deg,#08082a 0%,#12124a 50%,#08082a 100%)}
 .app-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.3))}
+.app-icon{
+  width:128px;height:128px;border-radius:28px;
+  position:relative;z-index:1;
+  box-shadow:0 10px 30px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25);
+  object-fit:cover;
+}
 .app-body{padding:24px 28px 28px}
 .app-name{font-size:22px;font-weight:700;letter-spacing:-.5px;margin-bottom:4px}
 .app-sub{font-size:14px;color:var(--text2);margin-bottom:16px}
@@ -370,7 +376,7 @@ footer{
 
   <div class="apps-grid">
     <div class="app-card reveal">
-      <div class="app-hero ir">🎯</div>
+      <div class="app-hero ir"><img class="app-icon" src="irtiqaa-icon.png" alt="Irtiqaa app icon" loading="lazy"></div>
       <div class="app-body">
         <div class="live-badge"><span class="ldot"></span>Live on App Store</div>
         <div class="app-name">Irtiqaa</div>
@@ -390,7 +396,7 @@ footer{
     </div>
 
     <div class="app-card reveal reveal-delay-1">
-      <div class="app-hero so">🎵</div>
+      <div class="app-hero so"><img class="app-icon" src="sonic-icon.png" alt="Sonic Player app icon" loading="lazy"></div>
       <div class="app-body">
         <div class="live-badge"><span class="ldot"></span>Live on App Store</div>
         <div class="app-name">Sonic Player</div>
