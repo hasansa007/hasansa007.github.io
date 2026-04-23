@@ -172,7 +172,8 @@ section{padding:clamp(60px,8vw,120px) clamp(20px,5vw,80px)}
 .app-sub{font-size:14px;color:var(--text2);margin-bottom:16px}
 .app-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}
 .tag{font-size:12px;font-weight:500;padding:4px 11px;border-radius:100px;background:var(--bg3);color:var(--text2);font-family:ui-monospace,monospace}
-.live-badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:5px 12px;border-radius:100px;background:rgba(52,199,89,.12);color:#34c759;margin-bottom:16px}
+.live-badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:5px 12px;border-radius:100px;background:rgba(52,199,89,.12);color:#34c759;margin-bottom:16px;text-decoration:none;transition:all var(--tr)}
+a.live-badge:hover{background:rgba(52,199,89,.22);transform:translateX(2px)}
 .ldot{width:6px;height:6px;border-radius:50%;background:#34c759;animation:pu 2s infinite}
 .app-bullets .bullet{font-size:14px}
 
@@ -372,9 +373,9 @@ footer{
 
   <div class="apps-grid">
     <div class="app-card reveal">
-      <div class="app-hero ir"><img class="app-icon" src="irtiqaa-icon.png" alt="Irtiqaa app icon" loading="lazy"></div>
+      <a class="app-hero ir" href="https://apps.apple.com/il/app/irtiqaa-%D8%A5%D8%B1%D8%AA%D9%82%D8%A7%D8%A1/id6760247581" target="_blank" rel="noopener" aria-label="Irtiqaa on the App Store"><img class="app-icon" src="irtiqaa-icon.png" alt="Irtiqaa app icon" loading="lazy"></a>
       <div class="app-body">
-        <div class="live-badge"><span class="ldot"></span>Live on App Store</div>
+        <a class="live-badge" href="https://apps.apple.com/il/app/irtiqaa-%D8%A5%D8%B1%D8%AA%D9%82%D8%A7%D8%A1/id6760247581" target="_blank" rel="noopener"><span class="ldot"></span>Live on App Store ↗</a>
         <div class="app-name">Irtiqaa</div>
         <div class="app-sub">Goal & Productivity System · iOS & Android</div>
         <div class="app-tags">
@@ -392,9 +393,9 @@ footer{
     </div>
 
     <div class="app-card reveal reveal-delay-1">
-      <div class="app-hero so"><img class="app-icon" src="sonic-icon.png" alt="Sonic Player app icon" loading="lazy"></div>
+      <a class="app-hero so" href="https://apps.apple.com/il/app/sonic-player/id6756487555" target="_blank" rel="noopener" aria-label="Sonic Player on the App Store"><img class="app-icon" src="sonic-icon.png" alt="Sonic Player app icon" loading="lazy"></a>
       <div class="app-body">
-        <div class="live-badge"><span class="ldot"></span>Live on App Store</div>
+        <a class="live-badge" href="https://apps.apple.com/il/app/sonic-player/id6756487555" target="_blank" rel="noopener"><span class="ldot"></span>Live on App Store ↗</a>
         <div class="app-name">Sonic Player</div>
         <div class="app-sub">Native Audio Engine · iOS</div>
         <div class="app-tags">
@@ -451,9 +452,9 @@ footer{
   </div>
 </section>
 
-<!-- EDUCATION & LANGUAGES -->
+<!-- EDUCATION -->
 <section id="education" style="padding-top:clamp(40px,5vw,80px);padding-bottom:clamp(40px,5vw,80px)">
-  <div class="section-label reveal">Education & Languages</div>
+  <div class="section-label reveal">Education</div>
   <h2 class="section-title reveal">Foundations.</h2>
   <div class="skills-wrapper" style="margin-top:40px">
     <div class="skill-card reveal">
@@ -465,11 +466,6 @@ footer{
       <div class="skill-icon">📱</div>
       <div class="skill-name">Mobile Application Development</div>
       <div class="skill-items">iOS & Android<br>John Bryce · 2011–2013 · A+</div>
-    </div>
-    <div class="skill-card reveal reveal-delay-2">
-      <div class="skill-icon">🗣️</div>
-      <div class="skill-name">Languages</div>
-      <div class="skill-items">Arabic (Native)<br>Hebrew (Professional)<br>English (Professional)</div>
     </div>
   </div>
 </section>
