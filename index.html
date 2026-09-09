@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hasan Sawaed — iOS Developer</title>
+<title>Hasan Sawaed — iOS Software Engineer</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -136,6 +136,7 @@ section{padding:clamp(60px,8vw,120px) clamp(20px,5vw,80px)}
 .exp-card:hover{transform:translateY(-4px);box-shadow:var(--shl)}
 .exp-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;flex-wrap:wrap;gap:10px}
 .exp-title{font-size:clamp(18px,2.5vw,22px);font-weight:700;letter-spacing:-.5px}
+.exp-date{font-size:13px;font-weight:500;color:var(--text3);background:var(--bg3);padding:4px 12px;border-radius:100px;white-space:nowrap}
 .exp-company{font-size:15px;font-weight:600;color:var(--accent);margin-bottom:20px}
 .exp-era{font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--text3);margin-bottom:10px;margin-top:20px}
 .exp-era:first-of-type{margin-top:0}
@@ -181,7 +182,7 @@ a.live-badge:hover{background:rgba(52,199,89,.22);transform:translateX(2px)}
 .app-bullets .bullet{font-size:14px}
 
 /* ── SKILLS ── */
-.skills-wrapper{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.skills-wrapper{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px}
 .skill-card{
   background:var(--card);border-radius:16px;padding:24px;
   border:1px solid var(--cb);box-shadow:var(--sh);
@@ -200,6 +201,7 @@ a.live-badge:hover{background:rgba(52,199,89,.22);transform:translateX(2px)}
   display:flex;align-items:center;justify-content:space-between;
   padding:18px 24px;background:var(--card);border-radius:16px;
   border:1px solid var(--cb);cursor:pointer;transition:all var(--tr);text-decoration:none;
+  color:var(--text);
 }
 .contact-row:hover{border-color:var(--accent);transform:translateX(6px)}
 .contact-row:hover .c-ico{background:var(--accent);transform:rotate(-8deg) scale(1.1)}
@@ -274,12 +276,12 @@ footer{
 
 <!-- HERO -->
 <div class="hero" id="home">
-  <div class="hero-eyebrow">iOS Developer</div>
+  <div class="hero-eyebrow">iOS Software Engineer</div>
   <h1 class="hero-title">
     Building iOS<br>systems that<br><span>scale.</span>
   </h1>
   <p class="hero-sub">
-    Swift and SwiftUI specialist — storage, caching, threading, and performance for consumer applications at scale. Three products shipped solo from zero to production, including an AI-powered full-stack platform.
+    13+ years in Objective-C and Swift — on-device ML pipelines, concurrency and memory, and location systems built on real sensor data. Three products shipped solo from concept to production.
   </p>
   <div class="hero-buttons">
     <a href="#experience" class="btn-primary">View experience</a>
@@ -294,14 +296,18 @@ footer{
 <!-- STATS -->
 <div class="stats-bar">
   <div class="stat-item reveal">
+    <div class="stat-num">13<span class="stat-unit">+</span></div>
+    <div class="stat-label">Years in iOS</div>
+  </div>
+  <div class="stat-item reveal reveal-delay-1">
     <div class="stat-num">3</div>
     <div class="stat-label">Independent products shipped</div>
   </div>
-  <div class="stat-item reveal reveal-delay-1">
+  <div class="stat-item reveal reveal-delay-2">
     <div class="stat-num">2</div>
     <div class="stat-label">Live on the App Store</div>
   </div>
-  <div class="stat-item reveal reveal-delay-2">
+  <div class="stat-item reveal reveal-delay-3">
     <div class="stat-num">3</div>
     <div class="stat-label">Companies shipped at</div>
   </div>
@@ -311,35 +317,54 @@ footer{
 <section id="experience">
   <div class="section-label reveal">Experience</div>
   <h2 class="section-title reveal">Where I've built.</h2>
-  <p class="section-sub reveal">Consumer iOS at scale — Core ML pipelines, threading and caching, modular architecture.</p>
+  <p class="section-sub reveal">Consumer iOS at scale — on-device ML pipelines, sensor-driven location systems, modular architecture.</p>
 
   <div class="exp-grid">
     <div class="exp-card reveal">
       <div class="exp-header">
         <div>
-          <div class="exp-title">iOS Engineer</div>
+          <div class="exp-title">Senior iOS Engineer</div>
           <div class="exp-company">Shutterfly · Haifa, Israel</div>
         </div>
+        <div class="exp-date">2017 – May 2026</div>
       </div>
 
       <div class="bullets">
-        <div class="bullet">Built the <strong>APC photo scoring engine</strong> — a batching/queuing pipeline with threading and caching, running <strong>Core ML predictions</strong> over the user's photo library</div>
+        <div class="bullet">Architected and implemented the <strong>APC photo scoring engine</strong> — taken from technology evaluation and prototyping through to production: a multithreaded batching/queuing pipeline running <strong>Core ML inference</strong> over very large photo libraries, engineered for memory pressure, battery, and background execution</div>
         <div class="bullet">Built the <strong>APC personalization flow and SwiftUI home screen</strong> — product suggestions driven by ranked photo results</div>
-        <div class="bullet"><strong>Owned production stability</strong> — Crashlytics monitoring, root-cause fixes</div>
-        <div class="bullet">Established <strong>feature-based modularization with SPM</strong> — clean, reusable components</div>
+        <div class="bullet"><strong>Debugged complex production systems</strong> across a fragmented device and OS landscape — Crashlytics monitoring, Instruments profiling, root-cause analysis and fixes</div>
+        <div class="bullet">Established <strong>feature-based modularization with SPM</strong> — explicit dependency graphs, reusable components, code review culture</div>
+        <div class="bullet">Delivered releases end to end through <strong>App Store Connect and TestFlight</strong></div>
       </div>
     </div>
 
-    <div class="exp-card reveal reveal-delay-1">
-      <div class="exp-header">
-        <div>
-          <div class="exp-title">Earlier iOS roles</div>
-          <div class="exp-company">Apester · Spreo</div>
+    <div class="exp-grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:16px">
+      <div class="exp-card reveal reveal-delay-1">
+        <div class="exp-header">
+          <div>
+            <div class="exp-title">iOS Engineer</div>
+            <div class="exp-company">Apester · SDK &amp; Interactive Media</div>
+          </div>
+          <div class="exp-date">2015 – 2017</div>
+        </div>
+        <div class="bullets">
+          <div class="bullet">Designed and shipped a <strong>publisher-facing iOS SDK</strong> (Objective-C era) enabling publishers to embed interactive units — polls, quizzes, real-time feeds</div>
+          <div class="bullet">Defined the <strong>public API surface and versioned release process</strong>; optimized rendering performance under high-frequency updates inside host apps</div>
         </div>
       </div>
-      <div class="bullets">
-        <div class="bullet"><strong>Apester</strong> — designed and shipped a publisher-facing iOS SDK; public API and versioned releases</div>
-        <div class="bullet"><strong>Spreo</strong> — indoor-navigation iOS apps: BLE positioning, real-time routing</div>
+
+      <div class="exp-card reveal reveal-delay-2">
+        <div class="exp-header">
+          <div>
+            <div class="exp-title">iOS Engineer</div>
+            <div class="exp-company">Spreo · Indoor Navigation</div>
+          </div>
+          <div class="exp-date">2013 – 2015</div>
+        </div>
+        <div class="bullets">
+          <div class="bullet">Built <strong>location technologies</strong> for hospitals, campuses, and malls — <strong>BLE beacon positioning fused with GPS</strong> for facility identification and continuous indoor/outdoor localization, working directly with hardware signal characteristics: signal strength, calibration, noise</div>
+          <div class="bullet">Implemented <strong>turn-by-turn navigation</strong> over proprietary routing — live route rendering across outdoor-to-indoor and floor transitions with real-time position updates</div>
+        </div>
       </div>
     </div>
   </div>
@@ -368,17 +393,17 @@ footer{
             <div class="bullet" style="font-style:italic;color:var(--text2)">Lecture recordings in, a complete course out — in Arabic, Hebrew, and English.</div>
             <div class="bullet"><strong>Sole engineer, concept → production</strong> — an AI pipeline turning lecture recordings into transcription, summaries, exams, and flashcards</div>
             <div class="bullet"><strong>9-stage LLM pipeline</strong> behind a model-agnostic gateway — JSON-schema outputs, self-healing recovery, spend caps</div>
-            <div class="bullet"><strong>Durable Postgres job queue</strong> with auto-resume</div>
+            <div class="bullet"><strong>Durable Postgres job queue</strong> — heartbeat leases and auto-resume</div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="app-card reveal">
-      <a class="app-hero mo" href="https://apps.apple.com/il/app/irtiqaa-%D8%A5%D8%B1%D8%AA%D9%82%D8%A7%D8%A1/id6760247581" target="_blank" rel="noopener" aria-label="Modu on the App Store"><img class="app-icon" src="modu-icon.png" alt="Modu app icon" loading="lazy"></a>
+      <a class="app-hero mo" href="https://apps.apple.com/il/app/irtiqaa-%D8%A5%D8%B1%D8%AA%D9%82%D8%A7%D8%A1/id6760247581" target="_blank" rel="noopener" aria-label="Modu: Paths on the App Store"><img class="app-icon" src="modu-icon.png" alt="Modu: Paths app icon" loading="lazy"></a>
       <div class="app-body">
         <a class="live-badge" href="https://apps.apple.com/il/app/irtiqaa-%D8%A5%D8%B1%D8%AA%D9%82%D8%A7%D8%A1/id6760247581" target="_blank" rel="noopener"><span class="ldot"></span>Live on App Store ↗</a>
-        <div class="app-name">Modu</div>
+        <div class="app-name">Modu: Paths</div>
         <div class="app-sub">Goals &amp; Habits App · iOS &amp; Android</div>
         <div class="app-tags">
           <span class="tag">Swift</span><span class="tag">Kotlin</span>
@@ -417,38 +442,48 @@ footer{
 <section id="skills">
   <div class="section-label reveal">Technical Skills</div>
   <h2 class="section-title reveal">The stack.</h2>
-  <p class="section-sub reveal">Deep iOS expertise, a cross-platform layer, and AI tooling in daily production use.</p>
+  <p class="section-sub reveal">Systems-level iOS — sensors, concurrency, and on-device inference, plus AI tooling in daily production use.</p>
 
   <div class="skills-wrapper">
     <div class="skill-card reveal">
       <div class="skill-icon">⚡</div>
       <div class="skill-name">Languages</div>
-      <div class="skill-items">Swift · Objective-C<br>Kotlin (KMP)</div>
+      <div class="skill-items">Objective-C · Swift<br>Kotlin (KMP) · Python</div>
     </div>
     <div class="skill-card reveal reveal-delay-1">
       <div class="skill-icon">🖼️</div>
       <div class="skill-name">Frameworks</div>
-      <div class="skill-items">SwiftUI · UIKit<br>Combine<br>Swift Concurrency</div>
+      <div class="skill-items">SwiftUI · UIKit<br>Combine · AVFoundation</div>
     </div>
     <div class="skill-card reveal reveal-delay-2">
-      <div class="skill-icon">🧩</div>
-      <div class="skill-name">Platform</div>
-      <div class="skill-items">Storage · Caching<br>Threading · REST / JSON<br>Performance optimization</div>
+      <div class="skill-icon">📍</div>
+      <div class="skill-name">Sensors &amp; Location</div>
+      <div class="skill-items">BLE beacon positioning<br>GPS fusion · Real-time routing<br>Live map rendering</div>
+    </div>
+    <div class="skill-card reveal reveal-delay-3">
+      <div class="skill-icon">⚙️</div>
+      <div class="skill-name">Systems</div>
+      <div class="skill-items">Multithreading · Swift Concurrency<br>Memory management (ARC)<br>Caching · Batching/queuing<br>Background execution</div>
     </div>
     <div class="skill-card reveal">
-      <div class="skill-icon">🏗️</div>
-      <div class="skill-name">Architecture</div>
-      <div class="skill-items">Modular Architecture · SPM<br>TCA<br>Clean, reusable components</div>
+      <div class="skill-icon">🧠</div>
+      <div class="skill-name">On-Device</div>
+      <div class="skill-items">Core ML inference at scale<br>Performance under memory<br>and battery constraints<br>Instruments</div>
     </div>
     <div class="skill-card reveal reveal-delay-1">
+      <div class="skill-icon">🏗️</div>
+      <div class="skill-name">Engineering Practice</div>
+      <div class="skill-items">Software design paradigms<br>Modular architecture (SPM)<br>XCTest · Code review<br>Crashlytics</div>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
       <div class="skill-icon">🤖</div>
       <div class="skill-name">AI Tooling</div>
       <div class="skill-items">AI-assisted development<br>workflows<br>LLM pipeline design (production)</div>
     </div>
-    <div class="skill-card reveal reveal-delay-2">
+    <div class="skill-card reveal reveal-delay-3">
       <div class="skill-icon">🚀</div>
-      <div class="skill-name">Quality &amp; Delivery</div>
-      <div class="skill-items">XCTest · Instruments · Git<br>App Store Connect · TestFlight<br>CI/CD</div>
+      <div class="skill-name">Delivery</div>
+      <div class="skill-items">App Store Connect · TestFlight<br>Full release cycle<br>CI/CD · Git</div>
     </div>
   </div>
 </section>
@@ -461,12 +496,17 @@ footer{
     <div class="skill-card reveal">
       <div class="skill-icon">🎓</div>
       <div class="skill-name">B.Ed — Software &amp; Electronics</div>
-      <div class="skill-items">ORT Colleges</div>
+      <div class="skill-items">ORT Colleges<br>2010–2013</div>
     </div>
     <div class="skill-card reveal reveal-delay-1">
+      <div class="skill-icon">📖</div>
+      <div class="skill-name">B.Sc. — in progress</div>
+      <div class="skill-items">The Open University of Israel<br>Currently pursuing</div>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
       <div class="skill-icon">📱</div>
       <div class="skill-name">Mobile Application Development</div>
-      <div class="skill-items">iOS &amp; Android<br>John Bryce</div>
+      <div class="skill-items">iOS &amp; Android<br>John Bryce · 2011–2013</div>
     </div>
   </div>
 </section>
@@ -488,7 +528,11 @@ footer{
         <div class="c-left"><div class="c-ico">💼</div><div><div class="c-label">LinkedIn</div><div class="c-val">hasansa007</div></div></div>
         <div class="c-arrow">↗</div>
       </a>
-      <a class="contact-row reveal reveal-delay-2" href="tel:+972542545288">
+      <a class="contact-row reveal reveal-delay-2" href="https://github.com/hasansa007" target="_blank" rel="noopener">
+        <div class="c-left"><div class="c-ico">🐙</div><div><div class="c-label">GitHub</div><div class="c-val">hasansa007</div></div></div>
+        <div class="c-arrow">↗</div>
+      </a>
+      <a class="contact-row reveal reveal-delay-3" href="tel:+972542545288">
         <div class="c-left"><div class="c-ico">📱</div><div><div class="c-label">Phone</div><div class="c-val">+972 54 254 5288</div></div></div>
         <div class="c-arrow">↗</div>
       </a>
@@ -498,7 +542,7 @@ footer{
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-copy">© 2026 Hasan Sawaed · iOS Developer</div>
+  <div class="footer-copy">© 2026 Hasan Sawaed · iOS Software Engineer</div>
   <div class="footer-links">
     <a href="#home">Home</a>
     <a href="#experience">Experience</a>
