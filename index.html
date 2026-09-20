@@ -164,6 +164,7 @@ section{padding:clamp(60px,8vw,120px) clamp(20px,5vw,80px)}
 .app-hero.mo{background:linear-gradient(135deg,#0d2b1a 0%,#1e5c34 50%,#0d2b1a 100%)}
 .app-hero.so{background:linear-gradient(135deg,#08082a 0%,#12124a 50%,#08082a 100%)}
 .app-hero.sh{background:linear-gradient(135deg,#0e1428 0%,#404e96 50%,#0e1428 100%)}
+.app-hero.dd{background:linear-gradient(135deg,#1c1613 0%,#5e3128 50%,#1c1613 100%)}
 .app-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.3))}
 .app-icon{
   width:128px;height:128px;border-radius:28px;
@@ -281,7 +282,7 @@ footer{
     Building iOS<br>systems that<br><span>scale.</span>
   </h1>
   <p class="hero-sub">
-    13+ years in Objective-C and Swift — on-device ML pipelines, concurrency and memory, and location systems built on real sensor data. Three products shipped solo from concept to production.
+    13+ years in Objective-C and Swift — on-device ML pipelines, concurrency and memory, and location systems built on real sensor data. Four products shipped solo from concept to production.
   </p>
   <div class="hero-buttons">
     <a href="#experience" class="btn-primary">View experience</a>
@@ -300,7 +301,7 @@ footer{
     <div class="stat-label">Years in iOS</div>
   </div>
   <div class="stat-item reveal reveal-delay-1">
-    <div class="stat-num">3</div>
+    <div class="stat-num">4</div>
     <div class="stat-label">Independent products shipped</div>
   </div>
   <div class="stat-item reveal reveal-delay-2">
@@ -374,7 +375,7 @@ footer{
 <section id="products" style="background:var(--bg2)">
   <div class="section-label reveal">Independent Products</div>
   <h2 class="section-title reveal">Shipped it.</h2>
-  <p class="section-sub reveal">Three products taken from concept to production solo — an AI platform on the web, two apps on the App Store.</p>
+  <p class="section-sub reveal">Four products taken from concept to production solo — an AI platform on the web, two apps on the App Store, and an open-source developer workflow.</p>
 
   <div class="apps-grid">
     <div class="app-card featured reveal">
@@ -432,6 +433,28 @@ footer{
           <div class="bullet" style="font-style:italic;color:var(--text2)">A player that respects your library — no ads, no algorithms.</div>
           <div class="bullet"><strong>Background playback</strong>, variable speed, lock-screen controls, Now Playing</div>
           <div class="bullet">Migrating from <strong>TCA to Clean Architecture</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-card featured reveal">
+      <div class="app-inner">
+        <a class="app-hero dd" href="https://github.com/hasansa007/dev-desk" target="_blank" rel="noopener" aria-label="DevDesk on GitHub"><img class="app-icon" src="devdesk-icon.png" alt="DevDesk app icon" loading="lazy"></a>
+        <div class="app-body">
+          <a class="live-badge" href="https://github.com/hasansa007/dev-desk" target="_blank" rel="noopener"><span class="ldot"></span>Open source on GitHub ↗</a>
+          <div class="app-name">DevDesk</div>
+          <div class="app-sub">Agent Development Workflow · macOS &amp; CLI</div>
+          <div class="app-tags">
+            <span class="tag">Swift</span><span class="tag">SwiftUI</span>
+            <span class="tag">macOS</span><span class="tag">Claude Code</span>
+            <span class="tag">Python</span>
+          </div>
+          <div class="bullets app-bullets">
+            <div class="bullet" style="font-style:italic;color:var(--text2)">A GitHub issue in, production out — through gates a coding agent can't skip.</div>
+            <div class="bullet"><strong>Sole engineer, concept → production</strong> — a macOS app and 21 agent skills shipped from a single repository</div>
+            <div class="bullet"><strong>17-phase pipeline</strong> — investigation, architecture, verification, docs, code review and promotion; every phase is an independently invocable door</div>
+            <div class="bullet"><strong>A board over real git worktrees</strong> — each task runs Claude Code or Codex in its own branch and folder, installable across three agent CLIs</div>
+          </div>
         </div>
       </div>
     </div>
